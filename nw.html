@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блоки новостей</title>
+    <style>
+        .news-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .news-block {
+            flex: 0 0 calc(25% - 20px);
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+        }
+
+        .news-block img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .news-block h2 {
+            font-size: 20px;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+
+        .news-block p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        @media screen and (max-width: 768px) {
+            .news-block {
+                flex-basis: calc(50% - 20px);
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .news-block {
+                flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Блоки новостей</h1>
+
+    <div class="news-container">
+        <div class="news-block">
+            <img src="img/maxresdefault.jpg" alt="Изображение новости 1">
+            <h2>Заголовок новости 1</h2>
+            <p>Текст новости здесь...</p>
+        </div>
+        <div class="news-block">
+            <img src="img/maxresdefault.jpg" alt="Изображение новости 2">
+            <h2>Заголовок новости 2</h2>
+            <p>Текст новости здесь...</p>
+        </div>
+        <div class="news-block">
+            <img src="img/maxresdefault.jpg" alt="Изображение новости 3">
+            <h2>Заголовок новости 3</h2>
+            <p>Текст новости здесь...</p>
+        </div>
+    </div>
+    
+</body>
+</html>
